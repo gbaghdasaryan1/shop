@@ -1,0 +1,67 @@
+.Bottombar {
+    width: 100%;
+    padding: 5px 0;
+
+
+    &>div {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>.Logo {
+            width: 75px;
+            height: 50px;
+        }
+
+        &>span {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #717171;
+
+            &>a {
+                color: #717171;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 760px) {
+    .Bottombar {
+        width: 100%;
+        padding: 5px 0;
+
+
+        &>div {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            text-align: center;
+
+            &>.Logo {
+                width: 55px;
+                height: 30px;
+            }
+
+            &>span {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: unset;
+                color: #717171;
+
+                &>a {
+                    color: #717171;
+                    font-size: 12px;
+
+                }
+            }
+        }
+    }
+
+}

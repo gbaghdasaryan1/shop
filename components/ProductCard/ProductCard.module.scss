@@ -1,0 +1,310 @@
+@import "../../styles/variables.scss";
+
+
+.ProductCard {
+    margin: 10px 0;
+    width: 240px;
+    // height: 450px;
+    height: fit-content;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+    background-position: center;
+    background-size: contain;
+
+
+
+    &:hover {
+        & .Tools {
+            display: flex !important;
+        }
+    }
+
+    .Image {
+        width: 100%;
+        height: 332px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .ProductImg {
+        position: relative;
+
+        &>.Tools {
+            display: none;
+            position: absolute;
+            right: 5px;
+            top: 45%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: 3s;
+
+
+            &>span {
+                width: 40px;
+                height: 40px;
+                margin: 5px;
+                border-radius: 50%;
+                background-color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                transition: 0.3s;
+                animation: addbasket 1s;
+
+
+                &:hover {
+                    box-shadow: rgba(114, 116, 117, 0.466) 0px 8px 24px;
+                }
+            }
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &>.Price {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        color: #37313A;
+    }
+
+    &>.Name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #37313A;
+    }
+
+}
+
+.BasketActive {
+    background-color: purple !important;
+
+    svg>path {
+        fill: white;
+    }
+}
+
+.LikeActive {
+    background-color: purple !important;
+
+    svg>path {
+        fill: white;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .ProductCard {
+        margin: 10px 0;
+        width: 200px;
+        height: 350px;
+        // height: fit-content;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 8px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 1s;
+
+
+
+        .Image {
+            width: 100%;
+            height: 250px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+    }
+
+}
+
+@media(max-width: 820px) {
+    .ProductCard {
+        margin: 10px 0;
+        width: 150px;
+        height: 250px;
+        // height: fit-content;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 8px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 1s;
+
+
+
+
+
+        .Image {
+            width: 100%;
+            max-height: 152px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ProductImg {
+            position: relative;
+
+            &>.Tools {
+                display: flex;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: 3s;
+
+
+                &>span {
+                    width: 30px;
+                    height: 30px;
+                    margin: 5px;
+                    border-radius: 50%;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    transition: 0.3s;
+
+
+                    &:hover {
+                        box-shadow: rgba(114, 116, 117, 0.466) 0px 8px 24px;
+                    }
+                }
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+
+        &:hover {
+            & .Tools {
+                display: flex !important;
+            }
+        }
+
+        &>.Price {
+            margin-top: 14px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 27px;
+            color: #37313A;
+        }
+
+        &>.Name {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #37313A;
+        }
+
+    }
+}
+
+@media(max-width: 500px) {
+    .ProductCard {
+        margin: 10px 0;
+        width: 150px;
+        height: 230px;
+        // height: fit-content;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 8px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+
+        &:hover {
+            & .Tools {
+                display: flex !important;
+            }
+        }
+
+        .Image {
+            width: 100%;
+            max-height: 115px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ProductImg {
+            position: relative;
+
+            &>.Tools {
+                display: flex;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: 3s;
+
+
+                &>span {
+                    width: 25px;
+                    height: 25px;
+                    margin: 5px;
+                    border-radius: 50%;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    transition: 0.3s;
+
+
+                    &:hover {
+                        box-shadow: rgba(114, 116, 117, 0.466) 0px 8px 24px;
+                    }
+                }
+
+                svg {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        &>.Price {
+            margin-top: 14px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 27px;
+            color: #37313A;
+        }
+
+        &>.Name {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            color: #37313A;
+        }
+
+    }
+}

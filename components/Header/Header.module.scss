@@ -1,0 +1,283 @@
+@import "../../styles/variables.scss";
+
+.Header {
+    width: 85%;
+    min-height: 20px;
+    padding-right: 25px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 84px 40px 2fr auto auto;
+    align-items: center;
+
+    &>.Logo {
+        width: 84px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    &>.BurgerIcon {
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+}
+
+.Icons {
+    display: flex;
+    gap: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #717171;
+
+
+
+    & .HeartIcon {
+        width: 33px;
+        height: 29px;
+        cursor: pointer;
+    }
+
+    & .BasketIcon {
+        width: 35px;
+        height: 31px;
+        cursor: pointer;
+    }
+
+    & .UserIcon {
+        width: 32px;
+        height: 31px;
+        cursor: pointer;
+
+    }
+
+    &>span {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        >span {
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            right: -5px;
+            color: white;
+            font-weight: bolder;
+            top: 0;
+            background-color: $purple;
+        }
+
+    }
+
+}
+
+
+@media(max-width: 1200px) {
+    .Header {
+        width: 85%;
+        min-height: 20px;
+        padding-right: 25px;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 84px 40px 2fr auto auto;
+        align-items: center;
+
+        &>.Logo {
+            width: 54px;
+            height: 40px;
+        }
+
+        &>.BurgerIcon {
+            width: 30px;
+            height: 30px;
+            margin-left: 0;
+        }
+    }
+
+
+    .Icons {
+        display: flex;
+        gap: 60px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #717171;
+
+        & .UserIcon {
+            width: 25px;
+            height: 24px;
+        }
+
+        & .HeartIcon {
+            width: 26px;
+            height: 22px;
+        }
+
+        & .BasketIcon {
+            width: 26px;
+            height: 22px;
+        }
+
+
+        &>span {
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &>p {
+                font-size: 12px;
+                position: absolute;
+                bottom: -18px;
+                left: -25px;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .Header {
+        width: 85%;
+        min-height: 20px;
+        padding-right: 25px;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 84px 40px 2fr auto auto;
+        align-items: center;
+
+        &>.Logo {
+            width: 44px;
+            height: 30px;
+        }
+
+        &>.BurgerIcon {
+            width: 25px;
+            height: 25px;
+            margin-left: -20px;
+        }
+    }
+
+
+    .Icons {
+        display: flex;
+        gap: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #717171;
+
+        & .UserIcon {
+            width: 19px;
+            height: 18px;
+        }
+
+        & .HeartIcon {
+            width: 20px;
+            height: 16px;
+        }
+
+        & .BasketIcon {
+            width: 20px;
+            height: 16px;
+        }
+
+
+        &>span {
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &>p {
+                font-size: 12px;
+                position: absolute;
+                bottom: -18px;
+                left: -25px;
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .Header {
+        width: 95%;
+        min-height: 20px;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 84px 40px 2fr auto auto;
+        align-items: center;
+
+        &>.Logo {
+            width: 44px;
+            height: 30px;
+        }
+
+        &>.BurgerIcon {
+            width: 25px;
+            height: 25px;
+            margin-left: -20px;
+        }
+    }
+
+
+    .Icons {
+        display: flex;
+        gap: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #717171;
+
+        & .UserIcon {
+            width: 19px;
+            height: 18px;
+        }
+
+        & .HeartIcon {
+            width: 20px;
+            height: 16px;
+        }
+
+        & .BasketIcon {
+            width: 20px;
+            height: 16px;
+        }
+
+
+        &>span {
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &>p {
+                font-size: 12px;
+                position: absolute;
+                bottom: -18px;
+                left: -25px;
+                display: none;
+            }
+        }
+    }
+}

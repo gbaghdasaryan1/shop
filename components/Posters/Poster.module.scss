@@ -1,0 +1,83 @@
+.Poster {
+    margin-top: 30px;
+    border-radius: 49px;
+    position: relative;
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+}
+
+.PosterImg {
+    border-radius: 50px;
+}
+
+.PosterItem {
+    border-radius: 49px;
+    margin-bottom: 40px;
+}
+
+.SliderButtons {
+    // width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-top: -18px;
+
+    &>button {
+        background: none;
+        border: none;
+        z-index: 10;
+    }
+}
+
+@media(max-width: 600px) {
+    .PosterImg {
+        border-radius: 35px;
+    }
+
+    .PosterItem {
+        border-radius: 49px;
+        margin-bottom: 30px;
+    }
+
+    .SliderButtons {
+        // width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+        margin-top: -18px;
+
+        &>button {
+            width: 25px;
+            height: 25px;
+            background: none;
+            border: none;
+            z-index: 10;
+        }
+    }
+}

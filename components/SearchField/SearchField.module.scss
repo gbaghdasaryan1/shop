@@ -1,0 +1,94 @@
+.SearchField {
+    margin: 0 25px;
+    position: relative;
+
+    &>.SearchIcon {
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 50%;
+        right: 99.6%;
+        transform: translate(100%, -50%);
+    }
+
+    &>input {
+        width: 100%;
+        height: 46px;
+        background: #FFFFFF;
+        border: 2px solid #E4E4E4;
+        border-radius: 6px;
+        outline: none;
+        padding-left: 30px;
+    }
+
+    &>ul {
+        width: 100%;
+        min-height: 200px;
+        position: absolute;
+        list-style: none;
+        max-height: 200px;
+        z-index: 10;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 0 10px;
+    }
+
+}
+
+
+@media(max-width: 1200px) {
+    .SearchField {
+        margin: 0 5px;
+        margin-right: 10px;
+        position: relative;
+
+        &>.SearchIcon {
+            position: absolute;
+            top: 50%;
+            right: 99.6%;
+            transform: translate(140%, -50%);
+        }
+
+        &>input {
+            width: 100%;
+            height: 40px;
+            background: #FFFFFF;
+            border: 2px solid #E4E4E4;
+            border-radius: 6px;
+            outline: none;
+            padding-left: 35px;
+        }
+
+
+
+    }
+}
+
+@media(max-width: 800px) {
+    .SearchField {
+        margin: 0;
+        margin-right: 10px;
+        margin-left: -20px;
+        position: relative;
+
+        &>.SearchIcon {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            right: 99.6%;
+            transform: translate(140%, -50%);
+        }
+
+        &>input {
+            width: 100%;
+            height: 30px;
+            background: #FFFFFF;
+            border: 2px solid #E4E4E4;
+            border-radius: 6px;
+            outline: none;
+            padding-left: 30px;
+        }
+    }
+}

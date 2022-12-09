@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.MuiTabs-indicator {
+    background-color: #37313A;
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    position: absolute !important;
+    bottom: 0 !important;
+}
+
+.Slider {
+    // display: flex !important;
+    // gap: 5px !important;
+
+    .slick-track {
+        display: flex !important;
+        padding: 10px 0;
+        gap: 10px;
+
+    }
+}
+
+
+// .slick-track {
+//     display: flex !important;
+//     padding: 5px;
+// }

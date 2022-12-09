@@ -1,0 +1,27 @@
+.Language {
+    display: flex;
+    gap: 2px;
+    justify-content: space-between;
+}
+
+.Dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+
+    >span {
+        text-decoration: none;
+        color: black;
+        padding: 0 5px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: rgba(128, 128, 128, 0.308);
+        }
+    }
+}
+
+.Flag {
+    border-radius: 10px;
+}

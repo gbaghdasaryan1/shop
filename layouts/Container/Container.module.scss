@@ -1,0 +1,33 @@
+.Container {
+    width: 85%;
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+.Flex {
+    display: flex;
+}
+
+.Block {
+    display: block;
+}
+
+@media(max-width: 1300px) {
+    .Container {
+        width: 90%;
+        min-height: 50px;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+@media(max-width: 500px) {
+    .Container {
+        width: 95%;
+        min-height: 50px;
+        margin: 0 auto;
+    }
+
+}
